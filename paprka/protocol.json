@@ -11,7 +11,7 @@
             "showIntroduction": false,
             "questionnaire": {
                 "repository": "https://raw.githubusercontent.com/RADAR-base/RADAR-REDCap-aRMT-Definitions/master/questionnaires/",
-                "name": "paprka_healthkit",
+                "name": "phq8",
                 "avsc": "questionnaire"
             },
             "startText": {
