@@ -65,10 +65,10 @@
                 },
                 "notification": {
                     "title": {
-                        "en": "Hello!"
+                        "en": "Questionnaire time"
                     },
                     "text": {
-                        "en": "Please fill in the questionnaire."
+                        "en": "Won't usually take longer than 2 minutes."
                     }
                 }
             }
