@@ -62,6 +62,14 @@
                 "completionWindow": {
                     "unit": "year",
                     "amount": 10
+                },
+                "notification": {
+                    "title": {
+                        "en": "Hello!"
+                    },
+                    "text": {
+                        "en": "Please fill in the questionnaire."
+                    }
                 }
             }
         },
