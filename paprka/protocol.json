@@ -10,8 +10,8 @@
             "name": "HEALTHKIT",
             "showIntroduction": false,
             "questionnaire": {
-                "repository": "https://raw.githubusercontent.com/RADAR-base/RADAR-REDCap-aRMT-Definitions/master/questionnaires/",
-                "name": "phq8",
+                "repository": "https://raw.githubusercontent.com/Onsentia/RADAR-REDCap-aRMT-Definitions/master/questionnaires/",
+                "name": "survey_1769884333882_w8612enr9",
                 "avsc": "questionnaire"
             },
             "startText": {
