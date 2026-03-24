@@ -1,5 +1,5 @@
 {
-  "version": "0.0.5",
+  "version": "0.0.10",
   "schemaVersion": "0.0.1",
   "name": "RECURRENT-GB Proxy",
   "healthIssues": [
@@ -9,7 +9,7 @@
   "protocols": [
     {
       "name": "EQ-5D-5L",
-      "type": "on_demand",
+      "type": "scheduled",
       "showIntroduction": true,
       "showInCalendar": true,
       "isDemo": false,
@@ -20,7 +20,7 @@
         "avsc": "questionnaire"
       },
       "startText": {
-        "en": "",
+        "en": "Dear Proxy, we'd be grateful if you could complete two short questionnaires: one about how your friend/partner/relative's treatment has impacted you - particularly in terms of time and costs, and one about your own quality of life. This helps us to understand the broader impact of care and support. Please answer these questions about yourself. The survey should take around 10-15 minutes to complete. If you experience any technical issues, please contact the research team coordinating the trial at the University of Oxford. You can reach us by phone on 07917101649 (Mon-Fri 9am-5pm) or by email at recurrentgb@nds.ox.ac.uk. Thank you for your continued participation - we truly appreciate your time and input. Many thanks, RECURRENT-GB Team",
         "it": "",
         "nl": "",
         "da": "",
@@ -46,13 +46,13 @@
       "estimatedCompletionTime": 3,
       "protocol": {
         "repeatProtocol": {
-          "unit": "year",
-          "amount": 9999
+          "unit": "month",
+          "amount": 6
         },
         "repeatQuestionnaire": {
           "unit": "min",
           "unitsFromZero": [
-            480
+            660
           ]
         },
         "reminders": {
@@ -63,23 +63,31 @@
         "completionWindow": {
           "unit": "day",
           "amount": 7
+        },
+        "notification": {
+          "title": {
+            "en": "RECURRENT-GB Participant Costs Questionnaire"
+          },
+          "text": {
+            "en": "Hello, please complete your RECURRENT-GB Participant Costs questionnaire here. Thank You!"
+          }
         }
       }
     },
     {
-      "name": "Costs Baseline",
-      "type": "on_demand",
+      "name": "EQ-5D-5L-Proxy-2",
+      "type": "scheduled",
       "showIntroduction": true,
       "showInCalendar": true,
       "isDemo": false,
-      "order": 1,
+      "order": 0,
       "questionnaire": {
         "repository": "https://raw.githubusercontent.com/RADAR-base/RADAR-REDCap-aRMT-Definitions/master/questionnaires/",
-        "name": "recurrent_costs_baseline_proxy",
+        "name": "eq5d5l_recurrent_proxy_2",
         "avsc": "questionnaire"
       },
       "startText": {
-        "en": "",
+        "en": "Dear Proxy, we'd be grateful if you could complete a short questionnaire about how your friend/partner/relative's treatment has impacted them - particularly in terms of time and costs. Please answer these questions as if you are the patient. The survey should take around 10-15 minutes to complete. If you experience any technical issues, please contact the research team coordinating the trial at the University of Oxford. You can reach us by phone on 07917101649 (Mon-Fri 9am-5pm) or by email at recurrentgb@nds.ox.ac.uk. Thank you for your continued participation - we truly appreciate your time and input. Many thanks, RECURRENT-GB Team",
         "it": "",
         "nl": "",
         "da": "",
@@ -102,16 +110,16 @@
         "de": "",
         "es": ""
       },
-      "estimatedCompletionTime": 5,
+      "estimatedCompletionTime": 3,
       "protocol": {
         "repeatProtocol": {
-          "unit": "year",
-          "amount": 9999
+          "unit": "month",
+          "amount": 3
         },
         "repeatQuestionnaire": {
           "unit": "min",
           "unitsFromZero": [
-            480
+            660
           ]
         },
         "reminders": {
@@ -122,12 +130,20 @@
         "completionWindow": {
           "unit": "day",
           "amount": 7
+        },
+        "notification": {
+          "title": {
+            "en": "RECURRENT-GB Participant Costs Questionnaire"
+          },
+          "text": {
+            "en": "Hello, please complete your RECURRENT-GB Participant Costs questionnaire here. Thank You!"
+          }
         }
       }
     },
     {
       "name": "Costs Follow-up",
-      "type": "on_demand",
+      "type": "scheduled",
       "showIntroduction": true,
       "showInCalendar": true,
       "isDemo": false,
@@ -138,7 +154,7 @@
         "avsc": "questionnaire"
       },
       "startText": {
-        "en": "",
+        "en": "Dear Proxy, we'd be grateful if you could complete a short questionnaire about how your friend/partner/relative's treatment has impacted them - particularly in terms of time and costs. Please answer these questions as if you are the patient. The survey should take around 10-15 minutes to complete. If you experience any technical issues, please contact the research team coordinating the trial at the University of Oxford. You can reach us by phone on 07917101649 (Mon-Fri 9am-5pm) or by email at recurrentgb@nds.ox.ac.uk. Thank you for your continued participation - we truly appreciate your time and input. Many thanks, RECURRENT-GB Team",
         "it": "",
         "nl": "",
         "da": "",
@@ -164,13 +180,13 @@
       "estimatedCompletionTime": 5,
       "protocol": {
         "repeatProtocol": {
-          "unit": "year",
-          "amount": 9999
+          "unit": "month",
+          "amount": 3
         },
         "repeatQuestionnaire": {
           "unit": "min",
           "unitsFromZero": [
-            480
+            660
           ]
         },
         "reminders": {
@@ -181,12 +197,20 @@
         "completionWindow": {
           "unit": "day",
           "amount": 7
+        },
+        "notification": {
+          "title": {
+            "en": "RECURRENT-GB Participant Costs Questionnaire"
+          },
+          "text": {
+            "en": "Hello, please complete your RECURRENT-GB Participant Costs questionnaire here. Thank You!"
+          }
         }
       }
     },
     {
       "name": "Weekly",
-      "type": "on_demand",
+      "type": "scheduled",
       "showIntroduction": true,
       "showInCalendar": true,
       "isDemo": false,
@@ -197,7 +221,7 @@
         "avsc": "questionnaire"
       },
       "startText": {
-        "en": "",
+        "en": "Dear Proxy, it is time for your weekly RECURRENT-GB questionnaire. There are just 3 quick questions, which should only take a minute to complete. If you experience any technical issues, please contact the research team coordinating the trial at the University of Oxford. You can reach us by phone on 07917101649 (Mon-Fri 9am-5pm) or by email at recurrentgb@nds.ox.ac.uk. Thank you for your continued participation - we truly appreciate your time. Many thanks, RECURRENT-GB Team",
         "it": "",
         "nl": "",
         "da": "",
@@ -223,13 +247,13 @@
       "estimatedCompletionTime": 2,
       "protocol": {
         "repeatProtocol": {
-          "unit": "year",
-          "amount": 9999
+          "unit": "week",
+          "amount": 1
         },
         "repeatQuestionnaire": {
           "unit": "min",
           "unitsFromZero": [
-            480
+            660
           ]
         },
         "reminders": {
@@ -240,12 +264,20 @@
         "completionWindow": {
           "unit": "day",
           "amount": 7
+        },
+        "notification": {
+          "title": {
+            "en": "RECURRENT-GB Weekly Questionnaire"
+          },
+          "text": {
+            "en": "Hello, please complete your weekly RECURRENT-GB questionnaire here. Thank You!"
+          }
         }
       }
     },
     {
-      "name": "Six Weekly",
-      "type": "on_demand",
+      "name": "Six-Weekly",
+      "type": "scheduled",
       "showIntroduction": true,
       "showInCalendar": true,
       "isDemo": false,
@@ -256,7 +288,7 @@
         "avsc": "questionnaire"
       },
       "startText": {
-        "en": "",
+        "en": "Dear Proxy, it is time for your 6-weekly RECURRENT-GB set of questionnaires, which focus on your friend's/partner's/relative's quality of life and should take around 15 minutes to complete. Please answer the questionnaires how you think they would describe their own health. If you experience any technical issues, please contact the research team coordinating the trial at the University of Oxford. You can reach us by phone on 07917101649 (Mon-Fri 9am-5pm) or by email at recurrentgb@nds.ox.ac.uk. Thank you for your continued participation - we truly appreciate your time and input. Many thanks, RECURRENT-GB Team",
         "it": "",
         "nl": "",
         "da": "",
@@ -282,13 +314,13 @@
       "estimatedCompletionTime": 3,
       "protocol": {
         "repeatProtocol": {
-          "unit": "year",
-          "amount": 9999
+          "unit": "week",
+          "amount": 6
         },
         "repeatQuestionnaire": {
           "unit": "min",
           "unitsFromZero": [
-            480
+            660
           ]
         },
         "reminders": {
@@ -299,23 +331,31 @@
         "completionWindow": {
           "unit": "day",
           "amount": 7
+        },
+        "notification": {
+          "title": {
+            "en": "RECURRENT-GB 6-weekly Questionnaires"
+          },
+          "text": {
+            "en": "Hello, please complete your 6-weekly RECURRENT-GB questionnaires here. Thank You!"
+          }
         }
       }
     },
     {
-      "name": "EORTC QLQ BN20",
-      "type": "on_demand",
+      "name": "EORTC-QLQ-BN20",
+      "type": "scheduled",
       "showIntroduction": true,
       "showInCalendar": true,
       "isDemo": false,
       "order": 1,
       "questionnaire": {
         "repository": "https://raw.githubusercontent.com/RADAR-base/RADAR-REDCap-aRMT-Definitions/master/questionnaires/",
-        "name": "qlq-bn20",
+        "name": "qlq-bn20_proxy",
         "avsc": "questionnaire"
       },
       "startText": {
-        "en": "",
+        "en": "Dear Proxy, it is time for your 6-weekly RECURRENT-GB set of questionnaires, which focus on your friend's/partner's/relative's quality of life and should take around 15 minutes to complete. Please answer the questionnaires how you think they would describe their own health. If you experience any technical issues, please contact the research team coordinating the trial at the University of Oxford. You can reach us by phone on 07917101649 (Mon-Fri 9am-5pm) or by email at recurrentgb@nds.ox.ac.uk. Thank you for your continued participation - we truly appreciate your time and input. Many thanks, RECURRENT-GB Team",
         "it": "",
         "nl": "",
         "da": "",
@@ -323,7 +363,7 @@
         "es": ""
       },
       "endText": {
-        "en": "Thank you — your responses help track tumour-specific symptoms and function.",
+        "en": "",
         "it": "",
         "nl": "",
         "da": "",
@@ -341,13 +381,13 @@
       "estimatedCompletionTime": 5,
       "protocol": {
         "repeatProtocol": {
-          "unit": "year",
-          "amount": 9999
+          "unit": "week",
+          "amount": 6
         },
         "repeatQuestionnaire": {
           "unit": "min",
           "unitsFromZero": [
-            480
+            660
           ]
         },
         "reminders": {
@@ -358,23 +398,31 @@
         "completionWindow": {
           "unit": "day",
           "amount": 7
+        },
+        "notification": {
+          "title": {
+            "en": "RECURRENT-GB 6-weekly Questionnaires"
+          },
+          "text": {
+            "en": "Hello, please complete your 6-weekly RECURRENT-GB questionnaires here. Thank You!"
+          }
         }
       }
     },
     {
-      "name": "EORTC QLQ C30",
-      "type": "on_demand",
+      "name": "EORTC-QLQ-C30",
+      "type": "scheduled",
       "showIntroduction": true,
       "showInCalendar": true,
       "isDemo": false,
       "order": 3,
       "questionnaire": {
         "repository": "https://raw.githubusercontent.com/RADAR-base/RADAR-REDCap-aRMT-Definitions/master/questionnaires/",
-        "name": "qlq-c30",
+        "name": "qlq-c30_proxy",
         "avsc": "questionnaire"
       },
       "startText": {
-        "en": "Please complete the QLQ C30 assessment.",
+        "en": "Dear Proxy, it is time for your 6-weekly RECURRENT-GB set of questionnaires, which focus on your friend's/partner's/relative's quality of life and should take around 15 minutes to complete. Please answer the questionnaires how you think they would describe their own health. If you experience any technical issues, please contact the research team coordinating the trial at the University of Oxford. You can reach us by phone on 07917101649 (Mon-Fri 9am-5pm) or by email at recurrentgb@nds.ox.ac.uk. Thank you for your continued participation - we truly appreciate your time and input. Many thanks, RECURRENT-GB Team",
         "it": "",
         "nl": "",
         "da": "",
@@ -382,7 +430,7 @@
         "es": ""
       },
       "endText": {
-        "en": "Thank you.",
+        "en": "",
         "it": "",
         "nl": "",
         "da": "",
@@ -400,13 +448,13 @@
       "estimatedCompletionTime": 3,
       "protocol": {
         "repeatProtocol": {
-          "unit": "year",
-          "amount": 9999
+          "unit": "week",
+          "amount": 6
         },
         "repeatQuestionnaire": {
           "unit": "min",
           "unitsFromZero": [
-            480
+            660
           ]
         },
         "reminders": {
@@ -417,6 +465,14 @@
         "completionWindow": {
           "unit": "day",
           "amount": 7
+        },
+        "notification": {
+          "title": {
+            "en": "RECURRENT-GB 6-weekly Questionnaires"
+          },
+          "text": {
+            "en": "Hello, please complete your 6-weekly RECURRENT-GB questionnaires here. Thank You!"
+          }
         }
       }
     }
